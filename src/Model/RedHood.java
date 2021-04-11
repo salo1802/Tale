@@ -6,8 +6,8 @@ public class RedHood extends Objeto{
 	
 	
 
-	public RedHood(int sX, int sY, int x, int y, int o, PApplet app) {
-		super(sX, sY, x, y, o, "RH.png", app);
+	public RedHood(int sX, int sY, int x, int y,  PApplet app) {
+		super(sX, sY, x, y, "RH.png", app);
 		
 		
 	}

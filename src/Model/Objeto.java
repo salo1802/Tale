@@ -9,19 +9,17 @@ public class Objeto {
 	public int sizeY;
 	public int pX;
 	public int pY;
-	public int opacity;
 	public boolean interacted;
 	public int animation;
 	public boolean growa;
 	PImage image;
 	
-	public Objeto(int sX,int sY,int x,int y,int o, String file,PApplet app) {
+	public Objeto(int sX,int sY,int x,int y, String file,PApplet app) {
 		
 		sizeX = sX;
 		sizeY = sY;
 		pX = x;
 		pY = y;
-		opacity = o;
 		animation = 0;
 		interacted = false;
 		growa = false;
@@ -59,9 +57,7 @@ public class Objeto {
 		
 	}
 	
-	public int getOpacity() {
-		return opacity;
-	}
+	
 	
 	public int getpX() {
 		return pX;
@@ -79,9 +75,7 @@ public class Objeto {
 		return sizeY;
 	}
 	
-	public void setOpacity(int opacity) {
-		this.opacity = opacity;
-	}
+	
 	
 	public void setpX(int pX) {
 		this.pX = pX;

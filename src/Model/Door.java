@@ -6,8 +6,8 @@ import processing.core.PImage;
 public class Door extends Objeto{
 
 	PImage image2;
-	public Door(int sX, int sY, int x, int y, int o, PApplet app) {
-		super(sX, sY, x, y, o, "FPC.jpg", app);
+	public Door(int sX, int sY, int x, int y,  PApplet app) {
+		super(sX, sY, x, y, "FPC.jpg", app);
 		image2 = app.loadImage("FPA.jpg");
 		
 		// TODO Auto-generated constructor stub
