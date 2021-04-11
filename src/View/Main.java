@@ -1,11 +1,12 @@
+package View;
 
 
 import processing.core.PApplet;
 
-public class Plantilla extends PApplet{
+public class Main extends PApplet{
 	
 	public static void main(String[] args) {
-		PApplet.main("Plantilla");
+		PApplet.main("View.Main");
 	}
 	
 	@Override
