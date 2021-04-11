@@ -1,7 +1,6 @@
 package View;
 
-
-import Model.Words;
+import Model.Objeto;
 import processing.core.PApplet;
 
 public class Main extends PApplet{
@@ -17,23 +16,24 @@ public class Main extends PApplet{
 		 
 	}
 	
-	Words prueba;
+	Objeto prueba;
 	
 
 	
 	
 	@Override
 	public void setup() {
-	prueba = new Words();
-	prueba.wordsConverter(this);
-	System.out.println(prueba.getWords());
-	prueba.newtext(this);
+		imageMode(CORNERS);
+		prueba = new Objeto(100,60,500,450,100, "Eyes.png", this);
+		
 		  
 	}
 	
 @Override
 public void draw() {
 	background(255);
+	prueba.paintObject(this);
+	prueba.animation();
 	
 	  
      
