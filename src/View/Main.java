@@ -1,6 +1,7 @@
 package View;
 
 
+import Model.Words;
 import processing.core.PApplet;
 
 public class Main extends PApplet{
@@ -16,19 +17,23 @@ public class Main extends PApplet{
 		 
 	}
 	
+	Words prueba;
 	
 
 	
 	
 	@Override
 	public void setup() {
-	
+	prueba = new Words();
+	prueba.wordsConverter(this);
+	System.out.println(prueba.getWords());
+	prueba.newtext(this);
 		  
 	}
 	
 @Override
 public void draw() {
-	
+	background(255);
 	
 	  
      
