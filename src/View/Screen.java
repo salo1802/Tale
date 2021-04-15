@@ -34,22 +34,8 @@ public class Screen {
 		case 1:
 			screen1.draw(app);
 			app.fill(255);
-			switch (screenText) {
-			case 0:
-			app.text("caperucita llamó a la puerta", 500, 200);
-			case 1:
-				app.text("y se acerco a su abuela", 500, 200);
+			app.text("prueba", app.width, app.height);
 			break;
-			case 2:
-				app.text("dijo: Que ojos tan grandes", 500, 200);
-			break;
-			case 3:
-				app.text(" luego dijo: Que orejas tan grandes", 500, 200);
-			break;
-			case 4:
-			app.text(" luego dijo: Que dientes tan grandes", 500, 200);
-			break;}
-		break;
 		case 2:
 			app.image(end, 0,0,1000,700);
 			break;}
