@@ -4,6 +4,7 @@ package View;
 
 
 
+import Model.Words;
 import processing.core.PApplet;
 
 public class Main extends PApplet{
@@ -20,7 +21,7 @@ public class Main extends PApplet{
 	}
 	
 	Screen prueba;
-	
+	Words words;
 
 	
 	
@@ -28,7 +29,8 @@ public class Main extends PApplet{
 	public void setup() {
 		imageMode(CORNERS);
 		prueba = new Screen(this); 
-		
+		words = new Words();
+		words.wordsConverter(this);
 		  
 	}
 	
@@ -36,9 +38,10 @@ public class Main extends PApplet{
 public void draw() {
 	background(255);
 	prueba.paintScreen(this);;
+	if(prueba.getScreenText()==5) {
+		words.newtext(this);
+	}
 	
-	
-	  
      
      
 

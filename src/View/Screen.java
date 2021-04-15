@@ -13,13 +13,15 @@ public class Screen {
 	int time = 0;
 	PImage beginning;
 	PImage end;
+	
+	
 	Screen (PApplet app){
 		app.frameRate = 30;
 		button = new ScreenButtons(); 
 		screen1 = new Interactions(app);
 		beginning = app.loadImage("first.png");
 		end = app.loadImage("final.png");
-		
+		app.textSize(50);
 	}
 	
 	
@@ -31,6 +33,8 @@ public class Screen {
 			break;
 		case 1:
 			screen1.draw(app);
+			app.fill(255);
+			app.text("prueba", app.width, app.height);
 			break;
 		case 2:
 			app.image(end, 0,0,1000,700);
@@ -46,6 +50,7 @@ public class Screen {
 			
 		}
 		
+		screenText = screen1.getStep();
 		
 	}
 	
@@ -66,4 +71,7 @@ public class Screen {
 		return screenType;
 	}
 	
+	public int getScreenText() {
+		return screenText;
+	}
 }
