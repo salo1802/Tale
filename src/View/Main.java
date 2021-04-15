@@ -3,7 +3,7 @@ package View;
 
 
 
-import Controller.Interactions;
+
 import processing.core.PApplet;
 
 public class Main extends PApplet{
@@ -19,7 +19,7 @@ public class Main extends PApplet{
 		 
 	}
 	
-	Interactions prueba;
+	Screen prueba;
 	
 
 	
@@ -27,7 +27,7 @@ public class Main extends PApplet{
 	@Override
 	public void setup() {
 		imageMode(CORNERS);
-		prueba = new Interactions(this); 
+		prueba = new Screen(this); 
 		
 		  
 	}
@@ -35,7 +35,7 @@ public class Main extends PApplet{
 @Override
 public void draw() {
 	background(255);
-	prueba.draw(this);
+	prueba.paintScreen(this);;
 	
 	
 	  
@@ -48,8 +48,8 @@ public void draw() {
 
 @Override
 public void mousePressed() {  
-	prueba.clickNGrow(mouseX, mouseY);
-	prueba.click(mouseX, mouseY);
+	prueba.mouseClick(mouseX, mouseY);
+	
 		}
 @Override
 public void mouseDragged() {
