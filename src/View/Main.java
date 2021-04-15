@@ -31,6 +31,7 @@ public class Main extends PApplet{
 		prueba = new Screen(this); 
 		words = new Words();
 		words.wordsConverter(this);
+		textAlign(CENTER,CENTER);
 		  
 	}
 	
