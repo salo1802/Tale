@@ -5,8 +5,8 @@ import processing.core.PImage;
 
 public class Objeto {
 
-	public int sizeX;
-	public int sizeY;
+	public float sizeX;
+	public float sizeY;
 	public int pX;
 	public int pY;
 	public boolean interacted;
@@ -32,26 +32,26 @@ public class Objeto {
 		app.image(image, pX - sizeX/2, pY - sizeY/2,pX + sizeX/2,pY + sizeY/2);
 	}
 	
-	public void animation() {
+	public void animation(PApplet app) {
 		
 		
 		
-		sizeX = sizeX+animation;
-		sizeY = sizeY+animation;
-				
+	
 		
 		if(growa==false) {
+			
 		animation++
 		;}
 		
 		if(growa ==true) {
+			 
 			animation--  ;}
 		
 		if(animation<=1) {
 			growa = false;
 		}
 		
-		if(animation>=99) {
+		if(animation>=9) {
 			growa = true;
 		}
 		
@@ -67,12 +67,24 @@ public class Objeto {
 		return pY;
 	}
 	
-	public int getSizeX() {
+	public float getSizeX() {
 		return sizeX;
 	}
 	
-	public int getSizeY() {
+	public float getSizeY() {
 		return sizeY;
+	}
+	
+	public int getAnimation() {
+		return animation;
+	}
+	
+	public boolean getGrowa() {
+		return growa;
+	}
+	
+	public boolean getInteracted() {
+		return interacted;
 	}
 	
 	
@@ -85,17 +97,19 @@ public class Objeto {
 		this.pY = pY;
 	}
 	
-	public void setSizeX(int sizeX) {
-		this.sizeX = sizeX;
+	public void setSizeX(double d) {
+		sizeX = (float) d;
 	}
 	
-	public void setSizeY(int sizeY) {
-		this.sizeY = sizeY;
+	public void setSizeY(float y) {
+		this.sizeY = y;
 	}
 	
 	public void setInteracted(boolean interacted) {
 		this.interacted = interacted;
 	}
+	
+	
 }
 
 	

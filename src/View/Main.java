@@ -3,6 +3,7 @@ package View;
 
 
 
+import Controller.Interactions;
 import processing.core.PApplet;
 
 public class Main extends PApplet{
@@ -18,7 +19,7 @@ public class Main extends PApplet{
 		 
 	}
 	
-	
+	Interactions prueba;
 	
 
 	
@@ -26,7 +27,7 @@ public class Main extends PApplet{
 	@Override
 	public void setup() {
 		imageMode(CORNERS);
-		
+		prueba = new Interactions(this); 
 		
 		  
 	}
@@ -34,6 +35,8 @@ public class Main extends PApplet{
 @Override
 public void draw() {
 	background(255);
+	prueba.draw(this);
+	System.out.println(prueba.tPrueba());
 	
 	//prueba.animation();
 	
