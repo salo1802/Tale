@@ -101,8 +101,8 @@ public class Objeto {
 		sizeX = (float) d;
 	}
 	
-	public void setSizeY(float y) {
-		this.sizeY = y;
+	public void setSizeY(double d) {
+		this.sizeY = (float) d;
 	}
 	
 	public void setInteracted(boolean interacted) {

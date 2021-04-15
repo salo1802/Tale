@@ -15,8 +15,9 @@ public class RedHood extends Objeto{
 	
 	
 	
-	public void move(int mouseX) {
+	public void move(int mouseX,int mouseY) {
 		if (interacted == false) {
+		pY = mouseY;
 		pX = mouseX;}
 	}
 	

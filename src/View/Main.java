@@ -36,9 +36,6 @@ public class Main extends PApplet{
 public void draw() {
 	background(255);
 	prueba.draw(this);
-	System.out.println(prueba.tPrueba());
-	
-	//prueba.animation();
 	
 	
 	  
@@ -51,7 +48,12 @@ public void draw() {
 
 @Override
 public void mousePressed() {  
-	
+	prueba.clickNGrow(mouseX, mouseY);
+	prueba.click(mouseX, mouseY);
 		}
+@Override
+public void mouseDragged() {
+	prueba.mouseDrag(mouseX, mouseY);
+}
  }
 

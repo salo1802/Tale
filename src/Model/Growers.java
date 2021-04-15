@@ -11,8 +11,8 @@ public class Growers extends Objeto{
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void grow() {
-		sizeX += 5;
-		sizeY += 5;
+	public void grow(double d,double e) {
+		sizeX += d;
+		sizeY += e;
 	}
 }
